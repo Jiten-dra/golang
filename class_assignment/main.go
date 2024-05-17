@@ -1,13 +1,16 @@
 package main
 
 import (
-	"com.learn/class/assignments"
+	// "com.learn/class/assignments"
+	"com.learn/class/final_assignment"
 )
 
 type afun func()
 
 // "./assignments"
 func main() {
+	// comment out to run assignment
+
 	// fmt.Println(assignments.Assignmentsfunc())
 	// Printit()
 	// var assignmentRun [5]afun
@@ -24,5 +27,6 @@ func main() {
 	// 	fmt.Printf("----------------------- end %v ----------------------\n", i)
 	// }
 
-	assignments.Run3()
+	// running final assignment
+	final_assignment.Run()
 }

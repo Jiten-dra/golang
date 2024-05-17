@@ -1,12 +1,13 @@
 package assignments
 
 import (
-	"fmt"
-	"time"
-	"math/rand/v2"
 	"context"
+	"fmt"
+	"math/rand/v2"
 	"sync"
+	"time"
 )
+
 var wg4 sync.WaitGroup
 
 func Run4() {
@@ -15,7 +16,7 @@ func Run4() {
 	wg4.Add(1)
 	go func(ctx context.Context) {
 		select {
-		case <-time.After( time.Second * time.Duration(rand.IntN(5)) ):
+		case <-time.After(time.Second * time.Duration(rand.IntN(5))):
 			fmt.Println("work done")
 			wg4.Done()
 		case <-ctx.Done():
